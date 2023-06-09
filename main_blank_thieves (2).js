@@ -23,16 +23,37 @@ const getSong = async (track, artist) => {
 }
 
 // verify that we get the song data
-
+// ============= getSong('Golden Hour', 'JVKE')
 
 
 
 
 // clickedSong function
 
+const clickedSong = async (divId) => {
+   //get all tracks first
+   const allTracks = document.getElementsByClassName              
+
+//get all artists
+const allArtists = 
+//get specific artist
+const artist = allArtists[divId.slice(-1)].innerText
 
 
+const song = await getSong(track, artist)
+console.log(song)
+
+playSong(song)
+
+}
+
+
+let audio = ''
 // handles playing the audio
+const playSong = (url) => {
+    if (audio)
 
+}
 
 // handles pausing the audio
+
